@@ -36,9 +36,14 @@ public class Konyv {
 		this.page_count = page_count;
 	}
 	
+	public String konyvEgySorban() {
+//		String string = String.format("%2d  %-44s %-22s %4d %4d", this.id, this.title, this.author, this.publish_year, this.page_count);
+		return String.format("%2d  %-44s %-22s %4d %4d", this.id, this.title, this.author, this.publish_year, this.page_count);
+	}
+	
 	@Override
 	public String toString() {
-		String string = String.format("%2d  %-44s %-22s %4d %4d", this.id, this.title, this.author, this.publish_year, this.page_count);
-		return string;
+//		String string = String.format("\n\tSzerző: %s\n\tCím: %s\n\tKiadás éve: %d\n\tOldalszám: %d", this.author, this.title, this.publish_year, this.page_count);
+		return String.format("\n\tSzerző: %s\n\tCím: %s\n\tKiadás éve: %d\n\tOldalszám: %d", this.author, this.title, this.publish_year, this.page_count);
 	}
 }
